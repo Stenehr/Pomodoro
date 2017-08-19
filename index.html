@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1>Pomodoro Clock</h1>
+
+        <div class="container">
+
+            <section id="settings">
+                <div id="breakSettings" class="settingsControl">
+                    <p>BREAK LENGTH</p>
+                    <i class="addMinute fa fa-plus-circle" aria-hidden="true"></i>
+                    <div id="breakTime">5</div>
+                    <i class="subtractMinute fa fa-minus-circle" aria-hidden="true"></i>
+                </div>
+
+                <div id="pomodoroSettings" class="settingsControl">
+                    <p>POMODORO LENGTH</p>
+                    <i class="addMinute fa fa-plus-circle" aria-hidden="true"></i>
+                    <div id="sessionTime">25</div>
+                    <i class="subtractMinute fa fa-minus-circle" aria-hidden="true"></i>
+                </div>
+            </section>
+
+            <section id="clock">
+                <h3>Session</h3>
+                <p id="timer">25:00</p>
+            </section>
+        </div>
+        <audio id="sound" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+        <script src="app.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+body {
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: .5px .5px 2px rgba(256, 150, 256, .7),
+                .5px .5px 4px rgba(256, 150, 256, .5);;
+}
+
+/* Settings  */
+
+.settingsControl {
+    width: 30%;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.settingsControl p {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+#breakSettings {
+    position: relative;
+    margin-right: 50px;
+}
+
+#pomodoroSettings {
+    position: relative;
+    margin-left: 50px;
+}
+
+.addMinute, .subtractMinute {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    color: rgb(230,230,230, .5);
+}
+
+.addMinute:hover, .subtractMinute:hover {
+    cursor: pointer;
+}
+
+.addMinute {
+    position: absolute;
+    top: 70px;
+    left: 42px;
+}
+
+.subtractMinute {
+    position: absolute;
+    top: 70px;
+    right: 42px;
+}
+
+#breakTime, #sessionTime {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+/* ./Settings  */
+
+/* Timer  */
+#clock {
+    width: 50%;
+    margin: 50px auto;
+    border: 3px solid #f9f9f9;
+    border-radius: 100%;
+    box-shadow: 0 0 2px rgba(256, 256, 256, 1),
+                0 0 5px rgba(256, 256, 256, .7);
+}
+
+#clock h3 {
+    font-size: 3em;
+}
+
+#clock:hover {
+    cursor: pointer;
+}
+
+#timer {
+    margin-top: 10px;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+@media (max-width: 760px) {
+
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        margin: 20px 0;
+    }
+
+    .settingsControl {
+        font-size: 1.5em;     
+    }
+
+    #settings {
+        margin: 0;
+    }
+
+    #breakSettings, #pomodoroSettings {
+        margin: 10px;
+        font-size: 1em;
+    }
+
+    .subtractMinute, .addMinute {
+        position: initial;
+        font-size: .9em;
+        margin: 10px;
+    }
+
+    #clock {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+
+    #clock h3 {
+        font-size: 1.5em;
+    }
+
+    #timer {
+        font-size: 2em;
+    }
+
+}
